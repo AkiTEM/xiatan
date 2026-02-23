@@ -54,6 +54,47 @@ xiatan/
 
 ---
 
+## 💻 Desenvolvimento Local
+
+### Opção 1: Script Start (Mais Rápido)
+
+**Windows:**
+```bash
+# Clique duplo no arquivo ou execute:
+start.bat
+```
+
+**Linux/Mac:**
+```bash
+npm start
+```
+
+### Opção 2: Linha de Comando
+
+```bash
+# Node.js com http-server (recomendado)
+npm start
+# ou
+npm run dev
+
+# Abre automaticamente em http://localhost:8080
+```
+
+### Opção 3: Sem Node.js
+
+Use qualquer servidor HTTP local:
+- **Python 3:** `python -m http.server 8080`
+- **Python 2:** `python -m SimpleHTTPServer 8080`
+- **PHP:** `php -S localhost:8080`
+- **VS Code:** Extensão "Live Server"
+
+### Para Parar o Servidor
+
+- Pressione **Ctrl + C** no terminal
+- Ou feche a janela do terminal
+
+---
+
 ## 🎨 Características
 
 ### Design

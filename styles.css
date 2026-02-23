@@ -845,7 +845,6 @@ section {
     padding: 2.5rem;
     border-radius: 20px;
     box-shadow: var(--shadow-md);
-    margin-top: 3rem;
 }
 
 .order-form-container h3 {
@@ -905,6 +904,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 3rem;
+    align-items: start;
 }
 
 .contact-info {

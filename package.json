@@ -4,8 +4,9 @@
   "description": "Site oficial da confeitaria Delícias da Xia Tân - www.xiatan.com.br",
   "main": "index.html",
   "scripts": {
-    "dev": "npx serve .",
-    "start": "npx serve .",
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080 -o",
+    "serve": "npx http-server . -p 8080",
     "deploy": "netlify deploy --prod",
     "preview": "netlify dev"
   },
