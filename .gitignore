@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Netlify
+.netlify/
+functions/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Backups
+*.bak
+*.backup
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Optional
+TODO.md
+NOTES.md

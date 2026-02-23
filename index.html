@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delícias da Xia Tân - Bolos, doces e tortas artesanais feitos com amor e dedicação. Encomende agora!">
+    <meta name="keywords" content="confeitaria, bolos artesanais, doces, tortas, São Paulo, Xia Tân">
+    <meta property="og:title" content="Delícias da Xia Tân - www.xiatan.com.br">
+    <meta property="og:description" content="Feitas com Amor e Dedicação - Confeitaria artesanal">
+    <meta property="og:image" content="/xiatan.png">
+    <meta property="og:url" content="https://www.xiatan.com.br">
+    <title>Delícias da Xia Tân - www.xiatan.com.br | Bolos e Doces Artesanais</title>
+    <link rel="icon" type="image/png" href="/xiatan.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema.org para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Delícias da Xia Tân",
+      "url": "https://www.xiatan.com.br",
+      "logo": "https://www.xiatan.com.br/xiatan.png",
+      "description": "Confeitaria artesanal especializada em bolos, doces e tortas feitos com amor",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Bruna Gallea, 275, Casa 3",
+        "postalCode": "02652-010",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55-11-98462-6618"
+    }
+    </script>
+</head>
+<body>
+    <!-- Header Fixo -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="xiatan.png" alt="Delícias da Xia Tân Logo" class="logo">
+                <span class="logo-text">Xia Tân</span>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#encomendas" class="nav-link">Encomendas</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo-animated">
+                <img src="xiatan.png" alt="Xia Tân" class="hero-logo">
+            </div>
+            <h1 class="hero-title">Delícias da Xia Tân</h1>
+            <p class="hero-subtitle">Feitas com Amor e Dedicação</p>
+            <div class="hero-cta">
+                <a href="#encomendas" class="btn btn-primary">Faça sua Encomenda</a>
+                <a href="https://wa.me/5511984626618?text=Olá! Gostaria de fazer uma encomenda" target="_blank" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Carrossel de Destaques -->
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">Nossos Destaques</h2>
+            <div class="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #FF69B4, #FFA500);"></div>
+                            <h3>Bolos Personalizados</h3>
+                            <p>Criações únicas para seu momento especial</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #FFA500, #8B4513);"></div>
+                            <h3>Doces Finos</h3>
+                            <p>Sabor e delicadeza em cada detalhe</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #8B4513, #FF69B4);"></div>
+                            <h3>Tortas Artesanais</h3>
+                            <p>Receitas tradicionais com toque especial</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="carousel-image" style="background: linear-gradient(135deg, #FF69B4, #8B4513);"></div>
+                            <h3>Sobremesas Exclusivas</h3>
+                            <p>Inovação e tradição se encontram</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>
+                <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Próximo">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Os bolos da Xia Tân são simplesmente maravilhosos! Encomendei para o aniversário da minha filha e todos adoraram. Qualidade impecável!"</p>
+                    <strong>— Maria Silva</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Atendimento perfeito e doces deliciosos. A personalização do bolo ficou exatamente como eu imaginei. Super recomendo!"</p>
+                    <strong>— João Santos</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Melhor confeitaria de São Paulo! Os doces são fresquinhos, feitos com muito carinho. Já virei cliente fiel!"</p>
+                    <strong>— Ana Paula</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="quem-somos" class="about parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="xiatan.png" alt="Xia Tân - Chef Confeiteira">
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Nossa História</h2>
+                    <p class="lead">Bem-vindo à Delícias da Xia Tân, onde cada doce conta uma história de amor e dedicação.</p>
+                    <p>Tudo começou com uma paixão: transformar ingredientes simples em experiências inesquecíveis. Xia Tân, nossa fundadora e chef confeiteira, cresceu cercada pelos aromas da cozinha da família, onde aprendeu que o verdadeiro segredo de um bom doce está no carinho com que é preparado.</p>
+                    <p>Hoje, mantemos essa tradição viva, selecionando apenas os melhores ingredientes frescos e criando cada receita com atenção aos detalhes. Seja um bolo de aniversário, um doce para presentear ou uma sobremesa especial, cada criação da Delícias da Xia Tân é única e personalizada.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🎂</div>
+                            <h3>Artesanal</h3>
+                            <p>Feito à mão com técnicas tradicionais</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">💝</div>
+                            <h3>Personalizado</h3>
+                            <p>Cada pedido é único e especial</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🌟</div>
+                            <h3>Qualidade</h3>
+                            <p>Ingredientes frescos e selecionados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section id="cardapio" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <p class="section-subtitle">Explore nossas delícias artesanais</p>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="bolos">Bolos</button>
+                <button class="filter-btn" data-category="doces">Doces</button>
+                <button class="filter-btn" data-category="tortas">Tortas</button>
+                <button class="filter-btn" data-category="sobremesas">Sobremesas</button>
+            </div>
+
+            <div class="menu-grid" id="menu-grid">
+                <!-- Bolos -->
+                <div class="menu-card" data-category="bolos">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FF69B4, #FFA500);">
+                        <span class="menu-card-badge">Destaque</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Bolo Red Velvet</h3>
+                        <p>Massa aveludada com cream cheese e toque de chocolate</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 89,90</span>
+                            <button class="btn-order" onclick="openWhatsApp('Bolo Red Velvet')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="bolos">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #8B4513, #FFA500);"></div>
+                    <div class="menu-card-content">
+                        <h3>Bolo de Chocolate Belga</h3>
+                        <p>Camadas de chocolate belga com ganache cremoso</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 95,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Bolo de Chocolate Belga')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="bolos">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FFF8DC, #FFA500);"></div>
+                    <div class="menu-card-content">
+                        <h3>Bolo de Cenoura Premium</h3>
+                        <p>Cenoura fresca com cobertura de chocolate ao leite</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 75,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Bolo de Cenoura Premium')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doces -->
+                <div class="menu-card" data-category="doces">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FF69B4, #8B4513);"></div>
+                    <div class="menu-card-content">
+                        <h3>Brigadeiros Gourmet</h3>
+                        <p>Diversos sabores: tradicional, morango, maracujá, pistache</p>
+                        <div class="menu-card-footer">
+                            <span class="price">R$ 3,50 unid.</span>
+                            <button class="btn-order" onclick="openWhatsApp('Brigadeiros Gourmet')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="doces">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FFA500, #FF69B4);"></div>
+                    <div class="menu-card-content">
+                        <h3>Cajuzinhos Artesanais</h3>
+                        <p>Amendoim selecionado com chocolate belga</p>
+                        <div class="menu-card-footer">
+                            <span class="price">R$ 3,00 unid.</span>
+                            <button class="btn-order" onclick="openWhatsApp('Cajuzinhos Artesanais')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="doces">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #8B4513, #FF69B4);">
+                        <span class="menu-card-badge">Novo</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Trufas Especiais</h3>
+                        <p>Chocolate nobre com recheios exclusivos</p>
+                        <div class="menu-card-footer">
+                            <span class="price">R$ 5,00 unid.</span>
+                            <button class="btn-order" onclick="openWhatsApp('Trufas Especiais')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tortas -->
+                <div class="menu-card" data-category="tortas">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FFF8DC, #8B4513);"></div>
+                    <div class="menu-card-content">
+                        <h3>Torta de Limão</h3>
+                        <p>Base crocante, creme de limão e merengue suíço</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 65,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Torta de Limão')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="tortas">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #8B4513, #FFA500);"></div>
+                    <div class="menu-card-content">
+                        <h3>Torta Holandesa</h3>
+                        <p>Creme de baunilha com raspas de chocolate</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 70,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Torta Holandesa')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobremesas -->
+                <div class="menu-card" data-category="sobremesas">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FF69B4, #FFF8DC);">
+                        <span class="menu-card-badge">Especial</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Pavê de Maracujá</h3>
+                        <p>Camadas de biscoito com creme de maracujá fresco</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 55,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Pavê de Maracujá')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sobremesas">
+                    <div class="menu-card-image" style="background: linear-gradient(135deg, #FFA500, #8B4513);"></div>
+                    <div class="menu-card-content">
+                        <h3>Mousse de Chocolate</h3>
+                        <p>Chocolate meio amargo em textura aerada perfeita</p>
+                        <div class="menu-card-footer">
+                            <span class="price">A partir de R$ 45,00</span>
+                            <button class="btn-order" onclick="openWhatsApp('Mousse de Chocolate')">Encomendar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Encomendas -->
+    <section id="encomendas" class="orders">
+        <div class="container">
+            <h2 class="section-title">Faça sua Encomenda</h2>
+            <p class="section-subtitle">Escolha a melhor forma de pedir suas delícias</p>
+            
+            <div class="orders-options">
+                <div class="order-option">
+                    <div class="order-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3>iFood</h3>
+                    <p>Peça delivery pelo nosso cardápio completo no iFood</p>
+                    <a href="https://www.ifood.com.br" target="_blank" class="btn btn-primary">
+                        Pedir no iFood
+                    </a>
+                </div>
+
+                <div class="order-option">
+                    <div class="order-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Fale direto conosco para pedidos personalizados</p>
+                    <a href="https://wa.me/5511984626618?text=Olá! Gostaria de fazer uma encomenda" target="_blank" class="btn btn-secondary">
+                        Chamar no WhatsApp
+                    </a>
+                </div>
+
+                <div class="order-option">
+                    <div class="order-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Formulário</h3>
+                    <p>Preencha nosso formulário de encomenda personalizada</p>
+                    <button class="btn btn-primary" onclick="document.getElementById('order-form-section').scrollIntoView({behavior: 'smooth'})">
+                        Preencher Formulário
+                    </button>
+                </div>
+            </div>
+
+            <!-- Formulário de Encomenda -->
+            <div class="order-form-container" id="order-form-section">
+                <h3>Formulário de Encomenda Personalizada</h3>
+                <form class="order-form" id="order-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone/WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(11) 98462-6618">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data da Encomenda *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Produto Desejado *</label>
+                        <select id="product" name="product" required>
+                            <option value="">Selecione...</option>
+                            <option value="Bolo Personalizado">Bolo Personalizado</option>
+                            <option value="Doces para Festa">Doces para Festa (100 unidades)</option>
+                            <option value="Torta">Torta</option>
+                            <option value="Sobremesa Especial">Sobremesa Especial</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Detalhes da Encomenda *</label>
+                        <textarea id="details" name="details" rows="5" required placeholder="Descreva sabores, decoração, quantidade de pessoas, tema, alergias alimentares, etc."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="delivery">Forma de Entrega *</label>
+                        <select id="delivery" name="delivery" required>
+                            <option value="">Selecione...</option>
+                            <option value="Retirada">Retirada no Local</option>
+                            <option value="Delivery">Delivery</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Enviar Encomenda</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos prontos para atender você</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Bruna Gallea, 275, Casa 3<br>CEP: 02652-010 - São Paulo - SP</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telefone/WhatsApp</h4>
+                            <p>+55 (11) 98462-6618</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@xiatan.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/xiatan" target="_blank" aria-label="Instagram">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://facebook.com/xiatan" target="_blank" aria-label="Facebook">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/5511984626618" target="_blank" aria-label="WhatsApp">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nome *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">E-mail *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Mensagem *</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="map-container">
+                <h3>Nossa Localização</h3>
+                <div class="map-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.8234567891234!2d-46.61234560000001!3d-23.4812345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5f5f5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sRua%20Bruna%20Gallea%2C%20275%20-%20S%C3%A3o%20Paulo%2C%20SP%2C%2002652-010!5e0!3m2!1spt-BR!2sbr!4v1708704000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="xiatan.png" alt="Xia Tân Logo" class="footer-logo">
+                    <p>Feitas com Amor e Dedicação</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#encomendas">Encomendas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Rua Bruna Gallea, 275, Casa 3</li>
+                        <li>📍 CEP 02652-010 - São Paulo - SP</li>
+                        <li>📱 +55 (11) 98462-6618</li>
+                        <li>✉️ contato@xiatan.com.br</li>
+                        <li>🌐 www.xiatan.com.br</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Horário de Atendimento</h4>
+                    <ul class="footer-contact">
+                        <li>Segunda a Sexta: 9h - 19h</li>
+                        <li>Sábado: 9h - 14h</li>
+                        <li>Domingo: Fechado</li>
+                        <li>Encomendas: Todos os dias</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Delícias da Xia Tân | www.xiatan.com.br - Todos os direitos reservados</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/xiatan" target="_blank" aria-label="Instagram">Instagram</a>
+                    <a href="https://facebook.com/xiatan" target="_blank" aria-label="Facebook">Facebook</a>
+                    <a href="https://wa.me/5511984626618" target="_blank" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5511984626618?text=Olá! Gostaria de saber mais sobre as delícias da Xia Tân" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

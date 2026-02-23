@@ -1,0 +1,31 @@
+{
+  "name": "delicias-xiatan",
+  "version": "1.0.0",
+  "description": "Site oficial da confeitaria Delícias da Xia Tân - www.xiatan.com.br",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "deploy": "netlify deploy --prod",
+    "preview": "netlify dev"
+  },
+  "keywords": [
+    "confeitaria",
+    "bolos",
+    "doces",
+    "xiatan",
+    "bakery",
+    "sweets"
+  ],
+  "author": "Delícias da Xia Tân",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkiTEM/xiatan.git"
+  },
+  "homepage": "https://www.xiatan.com.br"
+}

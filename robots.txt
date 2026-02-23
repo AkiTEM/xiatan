@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Disallow admin/config files
+Disallow: /netlify.toml
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://www.xiatan.com.br/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

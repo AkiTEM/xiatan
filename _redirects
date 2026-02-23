@@ -1,0 +1,33 @@
+# Redirects file for Netlify
+# This file provides additional redirect rules
+
+# Redirect all to HTTPS (handled by Netlify automatically)
+
+# Redirect www to non-www
+https://www.xiatan.com.br/*  https://xiatan.com.br/:splat  301!
+
+# Custom short URLs (examples)
+/whatsapp              https://wa.me/5511984626618?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda  302
+/instagram             https://instagram.com/xiatan  302
+/facebook              https://facebook.com/xiatan  302
+/ifood                 https://www.ifood.com.br  302
+
+# Deep links to sections
+/cardapio              /#cardapio  200
+/menu                  /#cardapio  200
+/encomendas            /#encomendas  200
+/pedidos               /#encomendas  200
+/contato               /#contato  200
+/sobre                 /#quem-somos  200
+
+# Legacy URL support (if migrating from old site)
+/index.php             /  301
+/home.html             /  301
+/produtos.html         /#cardapio  301
+/contato.html          /#contato  301
+
+# API proxying (if needed in future)
+# /api/*  https://your-backend.com/api/:splat  200
+
+# SPA fallback - serve index.html for all routes
+/*  /index.html  200

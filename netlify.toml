@@ -1,0 +1,101 @@
+# Netlify Configuration for Delícias da Xia Tân
+# www.xiatan.com.br
+
+[build]
+  # Directory to publish (root of the project)
+  publish = "."
+  
+  # Build command (if needed for future builds)
+  command = "echo 'No build needed - Static site ready!'"
+
+# Redirects and rewrites
+[[redirects]]
+  # Redirect www to non-www (or vice versa if preferred)
+  from = "https://www.xiatan.com.br/*"
+  to = "https://xiatan.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  # Handle 404 errors - redirect to home
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    
+    # Cache control for HTML
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Custom domain settings (adjust after domain connection)
+# [context.production]
+#   environment = { NODE_ENV = "production" }
+
+# Form submissions (if you want to use Netlify Forms in the future)
+# Just add data-netlify="true" to your forms
+
+# Plugin configurations
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  
+  [plugins.inputs]
+    buildDir = "."
+    exclude = [
+      './.vscode/**/*',
+      './node_modules/**/*'
+    ]
+
+# Environment variables (set in Netlify dashboard)
+# - CONTACT_EMAIL
+# - WHATSAPP_NUMBER
+# - ANALYTICS_ID
+
+# Custom 404 page (optional - create 404.html if needed)
+# [[redirects]]
+#   from = "/*"
+#   to = "/404.html"
+#   status = 404
