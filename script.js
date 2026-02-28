@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeForms();
     initializeScrollAnimations();
     initializeSmoothScroll();
+    initializeXiaFloat();
 });
 
 // ==================== HEADER ====================
@@ -610,6 +611,26 @@ document.addEventListener('keydown', (e) => {
         document.body.classList.remove('mouse-user');
     }
 });
+
+// ==================== XIA FLOAT ====================
+function initializeXiaFloat() {
+    const floatEl = document.getElementById('xia-float');
+    const bubbleEl = document.getElementById('xia-float-bubble');
+    if (!floatEl || !bubbleEl) return;
+
+    // Após 4s: esconde o balão
+    setTimeout(() => {
+        bubbleEl.classList.add('hide');
+    }, 4000);
+
+    // Após 5.5s: esconde o botão inteiro
+    setTimeout(() => {
+        floatEl.classList.add('hide');
+        floatEl.addEventListener('animationend', () => {
+            floatEl.style.display = 'none';
+        }, { once: true });
+    }, 5500);
+}
 
 // ==================== CONSOLE EASTER EGG ====================
 console.log('%c🍰 Delícias da Xia Tân 🍰', 'font-size: 24px; font-weight: bold; color: #FF69B4;');
